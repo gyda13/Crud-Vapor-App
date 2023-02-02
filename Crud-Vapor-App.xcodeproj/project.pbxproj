@@ -8,17 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		091241D92985D9CD00194100 /* Crud_Vapor_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091241D82985D9CD00194100 /* Crud_Vapor_AppApp.swift */; };
-		091241DB2985D9CD00194100 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091241DA2985D9CD00194100 /* ContentView.swift */; };
+		091241DB2985D9CD00194100 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091241DA2985D9CD00194100 /* ProductList.swift */; };
 		091241DD2985D9D000194100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 091241DC2985D9D000194100 /* Assets.xcassets */; };
 		091241E02985D9D000194100 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 091241DF2985D9D000194100 /* Preview Assets.xcassets */; };
+		091241EB2985DB0A00194100 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091241EA2985DB0A00194100 /* Product.swift */; };
+		091241ED2985DBD200194100 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091241EC2985DBD200194100 /* ProductListViewModel.swift */; };
+		091241EF2985E2A100194100 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091241EE2985E2A100194100 /* HttpClient.swift */; };
+		091241F12985FC2400194100 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091241F02985FC2400194100 /* Constants.swift */; };
+		09359D3A298B3C6F00A5DD8C /* ProductSummery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09359D39298B3C6F00A5DD8C /* ProductSummery.swift */; };
+		09359D3C298B3DDC00A5DD8C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09359D3B298B3DDC00A5DD8C /* TabBar.swift */; };
+		094EE96B298954F800F447B0 /* UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094EE96A298954F800F447B0 /* UpdateView.swift */; };
+		0998415D2986AF82006C4353 /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0998415C2986AF82006C4353 /* ModalType.swift */; };
+		0998415F2986B176006C4353 /* AddProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0998415E2986B176006C4353 /* AddProduct.swift */; };
+		099841612986B1BA006C4353 /* AddUpdateProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099841602986B1BA006C4353 /* AddUpdateProductViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		091241D52985D9CD00194100 /* Crud-Vapor-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crud-Vapor-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		091241D82985D9CD00194100 /* Crud_Vapor_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crud_Vapor_AppApp.swift; sourceTree = "<group>"; };
-		091241DA2985D9CD00194100 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		091241DA2985D9CD00194100 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 		091241DC2985D9D000194100 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		091241DF2985D9D000194100 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		091241EA2985DB0A00194100 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		091241EC2985DBD200194100 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		091241EE2985E2A100194100 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		091241F02985FC2400194100 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		09359D39298B3C6F00A5DD8C /* ProductSummery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSummery.swift; sourceTree = "<group>"; };
+		09359D3B298B3DDC00A5DD8C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		094EE96A298954F800F447B0 /* UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateView.swift; sourceTree = "<group>"; };
+		0998415C2986AF82006C4353 /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		0998415E2986B176006C4353 /* AddProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProduct.swift; sourceTree = "<group>"; };
+		099841602986B1BA006C4353 /* AddUpdateProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateProductViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +71,10 @@
 		091241D72985D9CD00194100 /* Crud-Vapor-App */ = {
 			isa = PBXGroup;
 			children = (
+				091241E82985DA6200194100 /* Views */,
+				091241E72985DA4D00194100 /* View Models */,
+				091241E62985DA3600194100 /* Models */,
 				091241D82985D9CD00194100 /* Crud_Vapor_AppApp.swift */,
-				091241DA2985D9CD00194100 /* ContentView.swift */,
 				091241DC2985D9D000194100 /* Assets.xcassets */,
 				091241DE2985D9D000194100 /* Preview Content */,
 			);
@@ -65,6 +87,46 @@
 				091241DF2985D9D000194100 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		091241E62985DA3600194100 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				091241EA2985DB0A00194100 /* Product.swift */,
+				091241E92985DA7500194100 /* Utilities */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		091241E72985DA4D00194100 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				091241EC2985DBD200194100 /* ProductListViewModel.swift */,
+				099841602986B1BA006C4353 /* AddUpdateProductViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		091241E82985DA6200194100 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				091241DA2985D9CD00194100 /* ProductList.swift */,
+				0998415E2986B176006C4353 /* AddProduct.swift */,
+				094EE96A298954F800F447B0 /* UpdateView.swift */,
+				09359D39298B3C6F00A5DD8C /* ProductSummery.swift */,
+				09359D3B298B3DDC00A5DD8C /* TabBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		091241E92985DA7500194100 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				091241EE2985E2A100194100 /* HttpClient.swift */,
+				091241F02985FC2400194100 /* Constants.swift */,
+				0998415C2986AF82006C4353 /* ModalType.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +199,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				091241DB2985D9CD00194100 /* ContentView.swift in Sources */,
+				091241EF2985E2A100194100 /* HttpClient.swift in Sources */,
+				0998415D2986AF82006C4353 /* ModalType.swift in Sources */,
+				091241DB2985D9CD00194100 /* ProductList.swift in Sources */,
+				09359D3C298B3DDC00A5DD8C /* TabBar.swift in Sources */,
 				091241D92985D9CD00194100 /* Crud_Vapor_AppApp.swift in Sources */,
+				091241ED2985DBD200194100 /* ProductListViewModel.swift in Sources */,
+				091241EB2985DB0A00194100 /* Product.swift in Sources */,
+				09359D3A298B3C6F00A5DD8C /* ProductSummery.swift in Sources */,
+				0998415F2986B176006C4353 /* AddProduct.swift in Sources */,
+				094EE96B298954F800F447B0 /* UpdateView.swift in Sources */,
+				099841612986B1BA006C4353 /* AddUpdateProductViewModel.swift in Sources */,
+				091241F12985FC2400194100 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import SwiftUI
 struct Crud_Vapor_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           TabBar()
         }
     }
 }
