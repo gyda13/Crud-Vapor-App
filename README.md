@@ -10,21 +10,11 @@ iOS CRUD App using [Vapor API ](https://github.com/gyda13/First-Vapor-API)
 ## CREAT
 - Http Client
 ```swift
-func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws {
-        var request = URLRequest(url: url)
-        
-        //tell the request what kind of data we are locking for
+
         request.httpMethod = httpMeyhod
         request.addValue(MIMEType.JSON.rawValue,
                          forHTTPHeaderField: HttpHeaders.contebtType.rawValue)
-        
-        request.httpBody = try? JSONEncoder().encode(object)
-        
-        let(_, response) = try await URLSession.shared.data(for: request)
-        guard (response as? HTTPURLResponse)?.statusCode == 300 else {
-            throw HttpError.badResponse
-        }
-    }
+    
    ```
  - View Model
  
@@ -33,26 +23,15 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
         try await HttpClient.shared.sendData(url: url, object: product,
                                              httpMeyhod: HttpMethodes.POST.rawValue)
  
-      
    ```
     
 
 ## READ
 - Http Client
 ```swift
- func fetch<T: Codable>(url: URL) async throws -> [T] {
-        let (data, response) = try await URLSession.shared.data(from: url)
-        
-        guard (response as? HTTPURLResponse)?.statusCode == 200 else {
-            throw HttpError.badResponse
-        }
-        
         guard let object = try? JSONDecoder().decode([T].self, from: data) else{
             throw HttpError.errorDecodingData
         }
-        
-        return object
-    }
    ```
  - View Model
    ```swift
@@ -65,8 +44,6 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
    
    ## UPDATE
    
- - Http Client </br> fetch func
-
  - View Model
    ```swift
     let productToUpdate = Product(id: productID, name: productName, actual_price: actualPrice, profit_price: profitPrice, work_price: workPrice,  quantity: Quintity)
