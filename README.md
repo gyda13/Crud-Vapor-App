@@ -27,12 +27,12 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
     }
    ```
  - View Model
+ 
    ```swift
   let product = Product(id: nil, name: productName, actual_price: actualPrice, profit_price: profitPrice, work_price: workPrice,  quantity: Quintity)
         try await HttpClient.shared.sendData(url: url, object: product,
                                              httpMeyhod: HttpMethodes.POST.rawValue)
-        
-    
+      
    ```
     
 
