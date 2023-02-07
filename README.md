@@ -6,9 +6,13 @@ iOS CRUD App using [Vapor API ](https://github.com/gyda13/First-Vapor-API)
 ## Technologies
 - SwiftUi
 
-## Demo
+## Demo 
+- creat product, update product quantity, delete product
 
-https://user-images.githubusercontent.com/90142160/217339735-16879271-5b16-4eb8-a5a6-e21646d9ec64.mp4
+
+https://user-images.githubusercontent.com/90142160/217340299-4f93894a-31f9-40f4-8775-4d69c3da6e4b.mp4
+
+
 
 
 
@@ -129,7 +133,7 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
                 }
             }
         } 
-        // delet the product from the Producr array in the view
+        // delet the product from the Product array in the view
         products.remove(atOffsets: offesets)
    }
    ```
