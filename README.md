@@ -65,8 +65,9 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
    
    ## UPDATE
    
-   - Http Client
-fetch func
+ - Http Client
+ </br>
+  fetch func
 
  - View Model
    ```swift
@@ -79,7 +80,7 @@ fetch func
    
    ## DELETE
    
-   - Http Client
+ - Http Client
    delete func will take the product id
 ```swift
    func delete(at id: UUID, url: URL) async throws {
