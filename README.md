@@ -75,7 +75,7 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
         }
    ```
    
-   ## Update
+## Update
  - Http Client <br/> fetch func
  - View Model
    ```swift
@@ -87,7 +87,7 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
                                              
    ```
    
-   ## Delete
+## Delete
    
  - Http Client<br/>delete func will take the product id
 ```swift
