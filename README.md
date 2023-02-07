@@ -29,9 +29,10 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
  - View Model
  
    ```swift
-  let product = Product(id: nil, name: productName, actual_price: actualPrice, profit_price: profitPrice, work_price: workPrice,  quantity: Quintity)
+    let product = Product(id: nil, name: productName, actual_price: actualPrice, profit_price: profitPrice, work_price: workPrice,  quantity: Quintity)
         try await HttpClient.shared.sendData(url: url, object: product,
                                              httpMeyhod: HttpMethodes.POST.rawValue)
+ 
       
    ```
     
@@ -65,12 +66,15 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
    ## UPDATE
    
    - Http Client
-- fetch func
+fetch func
+
  - View Model
    ```swift
- let productToUpdate = Product(id: productID, name: productName, actual_price: actualPrice, profit_price: profitPrice, work_price: workPrice,  quantity: Quintity)
+    let productToUpdate = Product(id: productID, name: productName, actual_price: actualPrice, profit_price: profitPrice, work_price: workPrice,  quantity: Quintity)
         try await HttpClient.shared.sendData(url: url, object: productToUpdate,
                                              httpMeyhod: HttpMethodes.PUT.rawValue)
+
+                                             
    ```
    
    ## DELETE
@@ -99,8 +103,10 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
     
    ```
  - View Model
+ 
+ In the ViewModel, iterate over the list of product id and pass the one that matches to delete func.
    ```swift
-  In the ViewModel, iterate over the list of product id and pass the one that matches to delete func.
+  
  // delete the product from the database
         offesets.forEach { i in
             guard let productId = products[i].id else {
