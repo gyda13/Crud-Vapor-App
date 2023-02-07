@@ -7,7 +7,7 @@ iOS CRUD App using [Vapor API ](https://github.com/gyda13/First-Vapor-API)
 - SwiftUi
 
 ## Demo 
-- Creat product, Update product quantity, Delete product
+- Create product, Update product quantity, Delete product
 
 
 https://user-images.githubusercontent.com/90142160/217340299-4f93894a-31f9-40f4-8775-4d69c3da6e4b.mp4
@@ -17,7 +17,7 @@ https://user-images.githubusercontent.com/90142160/217340299-4f93894a-31f9-40f4-
 
 
 
-## Creat
+## Create
 - Http Client
 ```swift
 func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws {
