@@ -8,7 +8,7 @@ iOS CRUD App using [Vapor API ](https://github.com/gyda13/First-Vapor-API)
 
 ## Demo
 
-
+creat product, update product quantity, delete product
 https://user-images.githubusercontent.com/90142160/217339735-16879271-5b16-4eb8-a5a6-e21646d9ec64.mp4
 
 
