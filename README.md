@@ -17,7 +17,7 @@ https://user-images.githubusercontent.com/90142160/217340299-4f93894a-31f9-40f4-
 
 
 
-## CREAT
+## Creat
 - Http Client
 ```swift
 func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws {
@@ -48,7 +48,7 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
    ```
     
 
-## READ
+## Read
 - Http Client
 ```swift
         func fetch<T: Codable>(url: URL) async throws -> [T] {
@@ -75,7 +75,7 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
         }
    ```
    
-   ## UPDATE
+   ## Update
  - Http Client <br/> fetch func
  - View Model
    ```swift
@@ -87,7 +87,7 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
                                              
    ```
    
-   ## DELETE
+   ## Delete
    
  - Http Client<br/>delete func will take the product id
 ```swift
