@@ -30,7 +30,8 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
  - View Model
  
    ```swift
-    let product = Product(id: nil, name: productName, actual_price: actualPrice, profit_price: profitPrice, work_price: workPrice,  quantity: Quintity)
+    let product = Product(id: nil, name: productName, actual_price: actualPrice, profit_price: profitPrice, 
+    work_price: workPrice,  quantity: Quintity)
         try await HttpClient.shared.sendData(url: url, object: product,
                                              httpMeyhod: HttpMethodes.POST.rawValue)
  
@@ -68,7 +69,8 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
  - Http Client <br/> fetch func
  - View Model
    ```swift
-    let productToUpdate = Product(id: productID, name: productName, actual_price: actualPrice, profit_price: profitPrice, work_price: workPrice,  quantity: Quintity)
+    let productToUpdate = Product(id: productID, name: productName, actual_price: actualPrice, 
+    profit_price: profitPrice, work_price: workPrice,  quantity: Quintity)
         try await HttpClient.shared.sendData(url: url, object: productToUpdate,
                                              httpMeyhod: HttpMethodes.PUT.rawValue)
 
