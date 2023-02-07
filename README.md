@@ -65,9 +65,7 @@ func sendData<T: Codable>(url: URL, object: T, httpMeyhod: String) async throws 
    
    ## UPDATE
    
- - Http Client
- </br>
-  fetch func
+ - Http Client </br> fetch func
 
  - View Model
    ```swift
